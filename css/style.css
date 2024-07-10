@@ -1,0 +1,40 @@
+       /* syntax selector{
+            property : value;
+        } */
+
+        /* universal selector */
+
+        *{
+            color: red;
+        }
+
+        /* tagname */
+
+        h1{
+            color: blue;
+        }
+
+        h2{
+            color: brown;
+        }
+
+        /* classname */
+
+        .c1{
+           color: green; 
+        }
+
+        .c2{
+            background-color: black;
+        }
+
+        .c3{
+            font-family: sans-serif;
+        }
+
+        /* id */
+
+        /* #i1{
+            color: purple;
+            background-color: red;
+        } */
