@@ -2,39 +2,41 @@
             property : value;
         } */
 
-        /* universal selector */
+       /* universal selector */
 
-        *{
-            color: red;
-        }
+       * {
+           color: #393a66;
+       }
 
-        /* tagname */
+       /* tagname */
 
-        h1{
-            color: blue;
-        }
+       h1 {
+           color: blue;
+       }
 
-        h2{
-            color: brown;
-        }
+       h2 {
+           color: brown;
+       }
 
-        /* classname */
+       /* classname */
 
-        .c1{
-           color: green; 
-        }
+       .c1 {
+           color: green;
+       }
 
-        .c2{
-            background-color: black;
-        }
+       .c2 {
+           background-color: black;
+       }
 
-        .c3{
-            font-family: sans-serif;
-        }
+       .c3 {
+           font-family: sans-serif;
+       }
 
-        /* id */
+       /* id */
 
-        /* #i1{
+       /* #i1{
             color: purple;
             background-color: red;
         } */
+
+        /* name, hex,rgb, rgba */
