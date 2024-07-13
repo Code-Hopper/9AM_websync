@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        #img1{
+
+        html{
+            font-size: 500px;
+            /* for all element in html element 1rem = 500px */
+        }
+
+        #img1 {
             width: 50%;
             height: 25%;
         }
 
-        .d1{
-            width: 500px;
+        .d1 {
+            width: 50%;
             height: 500px;
             background-color: red;
         }
+
+        .cd1 {
+            width: 50%;
+            height: 50%;
+            background-color: black;
+        }
+
+        .cdc1 {
+            width: 50%;
+            height: 50%;
+            background-color: green;
+        }
+
+        .child {
+            width: 50vw;
+            height: 50%;
+            background-color: blue;
+
+        }
+
+        .d2 {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+        }
+
+        .d3 {
+            width: 2.5rem;
+            height: 1em;
+            background-color: purple;
+        }
+
         
+        .parent{
+            font-size: 100px;
+            /* for all child of this parent element now 1 em = 100px */
+        }
+
     </style>
 
 </head>
+
 <body>
-    
+
     <!-- units px(static unit), % (responsive unit), vh & vw (view port), 
      em & rem(root em) ( can be setted by user, it has a default value and work with font size ) -->
-                
-     <img id="img1" src="./img.jpg" alt="">
 
-     <div class="d1">
+    <img id="img1" src="./img.jpg" alt="">
 
-     </div>
+    <div class="d1">
+        <div class="cd1">
+            <div class="cdc1">
+                <div class="child"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d2"></div>
+
+    <div class="parent">
+
+        <div class="d3"></div>
+
+    </div>
+
 
 </body>
+
 </html>
