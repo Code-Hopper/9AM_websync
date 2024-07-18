@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+
+        .size {
+            width: 300px;
+            height: 300px;
+        } */
+
+        /* .bg-red {
+            background-color: red;
+
+            display: inline-block; */
+        /* 
+               none : (removes the element from the flow)
+
+               block : (won't allow any other element in the same row, supports external height and width)
+               
+               inline : (allows other elements in same row but 
+               won't support external height and width)
+               
+               inline-block : (allows other elements in same row, supports external height and width )
+               
+               (flex, grid, inline-flex) this is layoutss 
+            */
+
+
+        /* .bg-green {
+            background-color: green;
+            display: inline-block;
+        }
+
+        .bg-blue {
+            background-color: blue;
+            display: inline-block;
+        }
+ */
+
+        .parent {
+            display: flex;
+            /* flex is a single dimesion layout (either row or column) */
+            flex-direction: column;
+            /* default direction is row (row, column, row-reverse,m column-reverse ) */
+            gap: 2px;
+            /* flex-wrap: wrap; */
+            /* wrap, nowrap */
+
+            justify-content: space-between;
+            /* start(deafult),end,center, space-between, space-around, space-evenly */
+            /* if direction is row then justify-content works horizontally  */
+
+            align-items: center;
+            /* start,end,center */
+            /* if direction is row then align-items works vertically  */
+
+
+            width: 754x;
+            height: 750px;
+            border: 10px solid red;
+
+        }
+
+        .child {
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="size bg-red">
+        this is some text
+    </div>
+    <div class="size bg-blue">
+        this is some text
+    </div>
+    <div class="size bg-green">
+        this is some text
+    </div> -->
+
+
+    <div class="parent">
+        <div class="child c1">1</div>
+        <div class="child c2">2</div>
+        <!-- <div class="child c3">3</div>
+        <div class="child c4">4</div>
+        <div class="child c5">5</div>
+        <div class="child c6">6</div>
+        <div class="child c7">7</div>
+        <div class="child c8">8</div>
+        <div class="child c9">9</div>
+        <div class="child c10">10</div> -->
+    </div>
+
+
+</body>
+
+</html>
