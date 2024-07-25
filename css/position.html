@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* height: 1000vh; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .parent {
+            width: 800px;
+            height: 800px;
+            border: 2px dotted black;
+            position: relative;
+        }
+
+        .e1 {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .e2 {
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            position: absolute;
+            z-index: 100;
+            top: 500px;
+        }
+
+        .e3 {
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* if we want z-index to work wi have to use position property first */
+
+        /* position: static, relative, absolute, fixed , sticky  */
+        /* top, bottom, left ,right , z-index  */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="parent">
+
+        <div class="e1"></div>
+
+    </div> -->
+    <div class="e2"></div>
+
+    <div>
+        <div class="e3"></div>
+    </div>
+
+    <!-- to make an element sticky we have to place the sticky value to the parent element -->
+
+</body>
+
+</html>

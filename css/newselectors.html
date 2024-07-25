@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1 {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        /* in each selector the right most element is going to be selected */
+
+        /* target child element */
+        /* parentelement childelement{
+        
+        } */
+
+        .d1 .BoxElement {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        /* direct child selector */
+        /* parentelement > childelement {
+        
+        } */
+
+        .d1>.BoxElement {
+            background-color: black;
+        }
+
+
+        .b {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 2%;
+        }
+
+        /* to select between a adjustant element(continuos elements) */
+        /* element + element { } */
+
+        .a+.b {
+            background-color: brown;
+        }
+
+        /* to select a alternet element */
+        /* element ~ element {
+        
+        } */
+
+        /* .a ~ .b{
+            background-color: palegoldenrod;
+        } */
+
+        /* nt-child(no. of child) selector (pseudo selector) */
+
+        /* selector:nth-child(9){
+            /* rules */
+        /* }  */
+
+        ul li {
+            color: red;
+        }
+
+        li:nth-child(1) {
+            color: blue;
+        }
+
+        /* hover */
+
+        li:hover{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <div class="d1">
+        <div class="BoxElement"></div>
+
+        <div>
+            <div>
+                <div class="BoxElement"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="BoxElement"></div>
+
+    <div class="BoxElement"></div>
+
+    <div class="a">
+
+    </div>
+
+    <h1>this is heading</h1>
+
+    <div class="b">
+
+    </div>
+
+
+    <div class="b">
+
+    </div>
+
+
+    <div class="b">
+
+    </div>
+
+
+    <div class="b">
+
+    </div> -->
+
+    <li>random item 1</li>
+    <li>random item 2</li>
+    <li>random item 3</li>
+
+    <div>
+
+        <li>random item 4</li>
+        <li>random item 5</li>
+
+    </div>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+        <li>item 9</li>
+    </ul>
+
+
+
+</body>
+
+</html>
