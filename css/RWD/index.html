@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD D 1</title>
+
+    <!-- media query : to diffrentiate between devices using their width -->
+
+    <!-- max-wdith, min-wdith -->
+    <!-- max-height, min-height -->
+
+    <style>
+        .d1 {
+            min-width: 300px;
+            max-width: 500px;
+            min-height: 300px;
+            max-height: 500px;
+            background-color: red;
+        }
+
+        /* breakpoints */
+        /* min-width > 990px (desktop/laptop)  */
+        /* min-width > 576px & max-width: < 990 (tablet)  */
+        /* max-width < 576px (mobile) */
+
+        /* syntax for media query */
+
+        @media screen and (min-width:990px) {
+            body{
+                background-color: red;
+            }
+            .d1{
+                background-color: green;
+            }
+        }
+
+
+        @media screen and (max-width:990px) and (min-width: 576px) {
+            body{
+                background-color: blue;
+            }
+            .d1{
+                background-color: green;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            body{
+                background-color: black;
+            }
+            .d1{
+                background-color: green;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="d1"></div>
+
+</body>
+
+</html>

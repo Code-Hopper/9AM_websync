@@ -84,10 +84,35 @@
             color: white;
         }
 
+        #element1{
+            background-color: red;
+            color: white;
+            display: inline-block;
+        }
+
+        /* ::before ::after */
+
+        #element1::after{
+            content: "this is after";
+            font-size: 5rem;
+            color: blue;
+            background-color: black;
+        }
+
+        #element1::before{
+            content: "this is before";
+        }
+
+
     </style>
 </head>
 
 <body>
+
+    <div id="element1">
+        <h1 style="display: inline-block;">This is some content</h1>
+    </div>
+    
     <!-- 
     <div class="d1">
         <div class="BoxElement"></div>
