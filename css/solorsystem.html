@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solor system</title>
+
+    <style>
+        *{margin: 0;padding: 0;font-family: sans-serif;}
+
+        .universe{
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .universe > #sun{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(222,88,1);
+            border-radius: 100%;
+            box-shadow: 0 0 100px 0px rgb(222,88,1);
+        }
+
+        .universe > #mercury{
+            width: 50px;
+            height: 50px;
+            background-color: #8A8B8B;
+            border-radius: 100%;
+        }
+
+        .universe > #venus{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: #CD9260;
+        }
+
+        .universe >  #earth{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: blue;
+        }
+
+        .universe >  #jupiter{
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+            background-color: #D9CBAA;
+        }
+
+        .universe >  #saturn{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: #C9AE71;
+        }
+
+        .universe >  #uranus{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: #BDCDD2;
+        }
+
+        .universe >  #neptune{
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: #314DCC;
+        }
+
+        #sun{
+            position: relative;
+        }
+
+        #sun::before{
+            content: "Sun";
+            color: white;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            top: -25%;
+            font-size: 2rem;
+        }
+
+        #mercury{
+            position: relative;
+        }
+
+        #mercury::before{
+            content: "Mercury";
+            color: white;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            top: -25%;
+            font-size: 0.5rem;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="universe">
+
+        <div id="sun" class="star">
+        </div>
+
+        <div id="mercury" class="planets"></div>
+        <div id="venus" class="planets"></div>
+        <div id="earth" class="planets"></div>
+        <div id="mars" class="planets"></div>
+        <div id="jupiter" class="planets"></div>
+        <div id="saturn" class="planets"></div>
+        <div id="uranus" class="planets"></div>
+        <div id="neptune" class="planets"></div>
+
+    </div>
+
+</body>
+</html>

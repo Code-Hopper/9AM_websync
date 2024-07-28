@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+
+    <style>
+        .parent>.heading1 {
+            color: black;
+            /* text-shadow: -30px 30px 5px black; */
+            box-shadow: 0 0 5px black;
+        }
+
+        .parent >.element {
+            width: 250px;
+            height: 250px;
+            /* background-color: red; */
+            box-shadow: 0 0 550px -80px rgb(0, 0, 0);
+            border-radius: 500px;
+
+            /* box-shadow: horizontal vertical blur spread color; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent" style="display: flex; width: 100%; padding: 15%; justify-content: center; align-items: center; flex-direction: column; gap: 50px;"> 
+
+        <h1 class="heading1">
+            this is heading 1
+        </h1>
+
+
+        <div class="element">
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
