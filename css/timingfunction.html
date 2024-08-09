@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .d {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 1%;
+            color: white;
+            font-weight: bolder;
+            font-size: 30px;
+            position: relative;
+            left: 0;
+            animation: moveright 5s ease infinite;
+        }
+        
+        #d1{
+            animation-timing-function: ease;
+        }
+
+        #d2{
+            animation-timing-function: linear;
+        }
+
+        #d3{
+            animation-timing-function: ease-in;
+        }
+
+        #d4{
+            animation-timing-function: ease-out;
+        }
+
+        #d5{
+            animation-timing-function: ease-in-out;
+        }
+
+        #d6{
+            animation-timing-function: steps(10);
+        }
+
+        #d7{
+            animation-timing-function: cubic-bezier(1,1,1);
+        }
+
+
+
+        @keyframes moveright {
+            0%{
+                left: 0;
+            }
+            50%{
+                left: 100%;
+            }
+            100%{
+                left: 0;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="d" id="d1">ease</div>
+    <div class="d" id="d2">linear</div>
+    <div class="d" id="d3">ease-in</div>
+    <div class="d" id="d4">ease-out</div>
+    <div class="d" id="d5">ease-in-out</div>
+    <div class="d" id="d6">steps</div>
+    <div class="d" id="d7">cubic-bezier</div>
+
+</body>
+</html>

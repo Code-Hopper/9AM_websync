@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1 {
+            background-color: red;
+            height: 500px;
+            width: 500px;
+            border-radius: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5) rotateX(0) rotateY(0);
+
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+
+            /* to assign a animation to a element */
+            animation-name: cointoss;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        .d1:hover {
+            background-color: blue;
+            border-radius: 500px;
+            top: 0;
+            transform: translate(-50%, 0) scale(0.5) rotateX(360deg) rotateY(360deg);
+        }
+
+        /* to create a animation we have to use @keyframes */
+
+        @keyframes cointoss {
+            0% {
+                background-color: blue;
+                border-radius: 500px;
+                transform: translate(-50%, -50%) scale(0.5) rotateX(0deg) rotateY(0deg);
+            }
+
+            50% {
+
+                background-color: blue;
+                border-radius: 500px;
+                transform: translate(-50%, 0) scale(0.5) rotateX(360deg) rotateY(360deg);
+
+            }
+
+            100% {
+                background-color: blue;
+                border-radius: 500px;
+                transform: translate(-50%, -50%) scale(0.5) rotateX(0deg) rotateY(0deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="d1"></div>
+</body>
+
+</html>
