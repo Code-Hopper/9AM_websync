@@ -32,19 +32,19 @@
     padding: calc(0.75rem + var(--padding-y)) calc(3rem + var(--padding-x));
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu{
+#navbar-1>.main-navbar-1>.navbar-menu {
     display: flex;
     list-style: none;
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu > .navbar-menu-item{
+#navbar-1>.main-navbar-1>.navbar-menu>.navbar-menu-item {
     transition: all 1s ease;
     position: relative;
     z-index: 1;
     background-color: transparent;
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu > .navbar-menu-item::before{
+#navbar-1>.main-navbar-1>.navbar-menu>.navbar-menu-item::before {
     content: "";
     width: 0;
     height: 2px;
@@ -56,25 +56,96 @@
     transition: all 0.34s ease;
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu > .navbar-menu-item:hover::before{
+#navbar-1>.main-navbar-1>.navbar-menu>.navbar-menu-item:hover::before {
     width: 100%;
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu > .navbar-menu-item:hover{
+#navbar-1>.main-navbar-1>.navbar-menu>.navbar-menu-item:hover {
     color: blue;
 }
 
-.main-logo{
+.main-logo {
     font-weight: bolder;
 }
 
-#navbar-1>.main-navbar-1 > .navbar-menu >.navbar-menu-item {
+#navbar-1>.main-navbar-1>.navbar-menu>.navbar-menu-item {
     padding: 0 1rem;
 }
 
-#navbar-1>.main-navbar-1 .navbar-cta{
+#navbar-1>.main-navbar-1 .navbar-cta {
     font-size: 1.4rem;
     border: none;
     padding: 10px 20px;
     border-radius: 24px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#navbar-1>.main-navbar-1 .navbar-cta::before {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    border-radius: 24px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+#navbar-1>.main-navbar-1 .navbar-cta:hover {
+    color: white;
+    /* font-weight: bold; */
+}
+
+#navbar-1>.main-navbar-1 .navbar-cta:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-menu-trigger{
+    display: none;
+}
+
+/* responsive designing */
+
+@media screen and (max-width:576px) {
+
+    .sub-navbar-1 .text,
+    .main-navbar-1 .navbar-menu,
+    .main-navbar-1 .navbar-buttons {
+        display: none !important;
+    }
+
+    .main-navbar-1{
+        padding: var(--padding-y) var(--padding-x) !important;
+        position: relative;
+    }
+
+    .mobile-menu-trigger{
+        display: initial;
+    }
+
+    /* open menu on hover on click */
+
+    .mobile-menu-trigger:hover + .navbar-menu {
+        display: flex !important;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 500px;
+        background-color: rgba(0,0,0,0.67);
+        color: white !important;  
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        font-weight: bold;
+    }
+
 }
