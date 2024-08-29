@@ -76,6 +76,120 @@
 
 // typeof() this function returns the datatype of passed args 
 
-let data = Number("1a")
-console.log(typeof(data))
+// let data = Number("1a")
+// console.log(typeof(data))
+// console.log(data)
+
+// let num1 = 20
+// let num2 = 20
+
+// let sum = num1 + num2
+
+// string concatation | we can create custom value strings
+// join a string with other string or with a variable
+
+// the sum of 10 and 20 is 30
+
+// console.log(
+// "the sum of " + num1 + " and " + num2 + " is " + (num1 + num2)
+// )
+
+// console.log(num1 + num2)
+
+// prompt always returns us a string we have to typecast it for a different data type.
+
+// string + number = string
+// number + string = string
+// number + number = number
+// string + string = string
+
+// type casting
+// changing a data type of data to other data type
+// example casting a number to a string or vice-versa
+// number(int, float), string, boolean
+
+// number ->  string, number -> boolean
+
+// string -> number, string -> boolean
+
+// boolean -> number , boolean -> string
+
+// 1) number -> string
+// let data = 12345
+// console.log(" data type before "+typeof(data))
+
+// data = String(data)
+// data = data.toString()
+
+// console.log(" data type after "+typeof(data))
+// 2) number to boolean
+
+// console.log(" data type before "+typeof(data))
+
+// data = Boolean(data)
+// console.log(data)
+
+// if value if greater than 0 then true else false
+
+// console.log(" data type after "+typeof(data))
+
+// 3) string -> number
+
+// let data = ""
+
+// console.log(" data type before "+typeof(data))
+
+// // // if a string is alpha numeric then the value will become NaN.
+// // data = Number(data)
+
+// // console.log(data)
+
+// // console.log(" data type after "+typeof(data))
+
+// // 4) string -> boolean
+ 
+// // if empty string then false, if the string has only false then false and if it has true then true
+
+// data = Boolean(data)
+// console.log(data)
+
+// console.log(" data type after "+typeof(data))
+
+
+// 5) Boolean -> number
+
+// let data = true
+
+// console.log(" data type before "+typeof(data))
+
+// data = Number(data)
+
+// // if boolean has true then number will be 1 else 0
+
+// console.log(data)
+
+// console.log(" data type after "+typeof(data))
+
+// 6) boolean -> string
+
+let data = false
+
+console.log(" data type before "+typeof(data))
+
+data = String(data)
+// data = data.toString()
+
+// if boolean has true then string will be true else false
+
 console.log(data)
+
+console.log(" data type after "+typeof(data))
+
+
+// let userInput = Number(prompt("enter number"))
+
+// console.log(typeof(userInput))
+// console.log(userInput)
+
+// wap in js take 2 number using prompt type cast then into numbers then perfor the addition and console.log the output.
+// try to make the code is lesser line possible
