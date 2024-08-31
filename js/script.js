@@ -1,5 +1,8 @@
 // variables & data types 
 
+// doSomething2("amey")
+
+
 // variable: a empty box which may have some name where data can be stored and called.
 
 // ; for termination of a line or statement
@@ -147,7 +150,7 @@
 // // console.log(" data type after "+typeof(data))
 
 // // 4) string -> boolean
- 
+
 // // if empty string then false, if the string has only false then false and if it has true then true
 
 // data = Boolean(data)
@@ -172,18 +175,18 @@
 
 // 6) boolean -> string
 
-let data = false
+// let data = false
 
-console.log(" data type before "+typeof(data))
+// console.log(" data type before "+typeof(data))
 
-data = String(data)
+// data = String(data)
 // data = data.toString()
 
 // if boolean has true then string will be true else false
 
-console.log(data)
+// console.log(data)
 
-console.log(" data type after "+typeof(data))
+// console.log(" data type after "+typeof(data))
 
 
 // let userInput = Number(prompt("enter number"))
@@ -193,3 +196,181 @@ console.log(" data type after "+typeof(data))
 
 // wap in js take 2 number using prompt type cast then into numbers then perfor the addition and console.log the output.
 // try to make the code is lesser line possible
+
+
+// let answer = Number(prompt("enter number 1")) + Number(prompt("Enter Number 2"))
+// console.log(answer)
+
+// custom user defined function in javascript
+
+// 2 types of function in javascript
+
+// using function keyword / (ES6 module Fat Arrow Function) arrow function
+
+// syntax for using funcrtion keyword
+
+// function function_name(parameters) {
+//     // function body
+//     // return statement
+// }
+
+// write function name and '()' to call/run a function 
+// function_name()
+
+// function sayHello(){
+//     console.log("Hello User !")
+//     console.log("how are you !")
+// }
+
+// sayHello()
+// sayHello()
+// sayHello()
+// sayHello()
+// sayHello()
+// sayHello()
+
+// 4 types of function
+//1) no args & no return
+//2) args & no return
+//3) args & return
+//4) no args & return
+
+// function doSomething() {
+//     console.log("this function does't accepts any args and does't return anything !")
+//     console.log("this function performs the assigned task to it ")
+// }
+
+// calling a function
+// doSomething()
+
+// wap a function in js to add 2 numbers and display the output
+
+// function sumOfTwo(number1, number2,number3){
+//     console.log(number1 + number2 + number3)
+// }
+
+// sumOfTwo(100,500,80)
+// sumOfTwo(10,500,76)
+// sumOfTwo(1990,56778,99)
+
+// wap in js to return the sum of 2 numbers
+
+// function sum(num1,num2){
+//     let add = num1 + num2
+//     // return statement (a function body can have only one return) 
+//     return add
+// }
+
+// let result = sum(111,2) // this function has return us the value of 111 + 2 and we have stored the returned value in the result variable
+
+// console.log(result)
+
+// let n1 = 123;
+// let n2 = 456;
+
+// function addition(n1,n2){
+//     return n1 + n2
+// }
+
+// console.log(addition(10,20))
+
+// 2) arrow function
+
+// scope function_name = (args) =>{
+
+// function body
+// return statement
+
+// }
+
+
+// let doSomething1 = (name) =>{
+//     console.log("Hello ! " + name )
+// }
+
+// doSomething1("amey")
+
+// function doSomething2(name){
+//     console.log("Hello ! " + name + ", how are you." )
+// }
+
+
+// strings 
+
+// let data = "Some String"
+
+// to find the length of string we have to count charc.
+
+// string.length
+
+// console.log(data.length)
+
+// upper case and lower case
+
+// Pencil
+
+// let search = "Pencil"
+
+//     .toLowerCase()
+
+// pencil
+
+// console.log(data)
+// console.log(data.toUpperCase())
+// console.log(data.toLowerCase())
+
+// trim() it remove leading and trailing spaces from the string
+
+let input = "some string"
+
+// input = input.trim()
+
+// console.log(input.length)
+
+// the charc. of string has indexes
+// s[0]t[1]r[2]i[3]n[4]g[5]
+
+// string.chartAt(index no.) returns the char at passed index
+
+// console.log(input.charAt(0))
+// console.log(input.charAt(2))
+// console.log(input.charAt(1))
+// console.log(input.charAt(3))
+// console.log(input.charAt(4))
+// console.log(input.charAt(5))
+// console.log(input.charAt(6))
+
+// string.indexOf("char") return the index of char
+// return first index of a char in string
+// console.log(input.indexOf("o"))
+// console.log(input.lastIndexOf("o"))
+
+// string.match() is to compare 2 strings return boolean
+
+// console.log(input.match("string"))
+// console.log(input.localeCompare("some data"))
+
+// string.replace() first find the char to replace 
+
+// input = input.replace("s","a")
+
+// input = input.replaceAll("s","a")
+
+// console.log(input)
+
+// to divide a string we have 2 methods slice, substring
+
+// string.slice(staring index, ending index)
+
+// let value = input.slice(0,5)
+
+// console.log(input)
+// console.log(value)
+
+
+// string.substring(staring index, ending index)
+
+let value = input.substring(0,5)
+
+console.log(input)
+console.log(value)
