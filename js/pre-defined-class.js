@@ -117,47 +117,49 @@
 
 // set methods / setters
 
-let students = [
-    {
-        name : "student 1",
-        phone: "123",
-        addmissionDate: "Sep 25 2024"
-    },
+// let students = [
+//     {
+//         name : "student 1",
+//         phone: "123",
+//         addmissionDate: "Sep 25 2024"
+//     },
 
-    {
-        name : "student 2",
-        phone: "123",
-        addmissionDate: "Sep 28 2024"
-    },
+//     {
+//         name : "student 2",
+//         phone: "123",
+//         addmissionDate: "Sep 28 2024"
+//     },
 
-    {
-        name : "student 3",
-        phone: "123",
-        addmissionDate: "Sep 19 2024"
-    },
+//     {
+//         name : "student 3",
+//         phone: "123",
+//         addmissionDate: "Sep 19 2024"
+//     },
 
-    {
-        name : "student 4",
-        phone: "123",
-        addmissionDate: "Sep 20 2024"
-    }
-]
+//     {
+//         name : "student 4",
+//         phone: "123",
+//         addmissionDate: "Sep 20 2024"
+//     }
+// ]
 
-// perform selection sort to sort by addmission date
+// // perform selection sort to sort by addmission date
 
-students.sort((prev,next)=>{
-    if(new Date(prev.addmissionDate).getTime() > new Date(next.addmissionDate).getTime() ){
-        return 1
-    }else{
-        return -1
-    }
-})
+// students.sort((prev,next)=>{
+//     if(new Date(prev.addmissionDate).getTime() > new Date(next.addmissionDate).getTime() ){
+//         return 1
+//     }else{
+//         return -1
+//     }
+// })
 
-let newStudentsArray = students.filter((student)=>{
-    if(new Date("Sep 20 2024").getTime() < new Date(student.addmissionDate).getTime()){
-        return student
-    }
-})
+// let newStudentsArray = students.filter((student)=>{
+//     if(new Date("Sep 20 2024").getTime() < new Date(student.addmissionDate).getTime()){
+//         return student
+//     }
+// })
 
-console.log(students)
-console.log(newStudentsArray)
+// console.log(students)
+// console.log(newStudentsArray)
+
+// syncronus / blocking javascript
