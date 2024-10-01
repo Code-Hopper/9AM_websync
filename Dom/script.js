@@ -90,3 +90,89 @@
 // btn1.onmouseleave = (()=>{
 //     console.log("mouse leaved !")
 // })
+
+// events in js and eventhandelers
+
+// click, dblclick, mouse event, key event, load , unload
+
+// it is also a output statement
+// document.write("this is docuemnt write statement !")
+
+// // document.getElementsByTagName("h1")[0].style.color = "red"
+
+// for (let element of document.getElementsByTagName("h1")) {
+//     element.style.color = "red";
+// }
+
+// create element, delete element, append element
+
+// let newElement = document.createElement("h2")
+
+// newElement.innerText = "some text data `123 !"
+
+// console.log(newElement)
+
+
+// we must append child in a parent element only not in document
+// document.getElementById("parent").appendChild(newElement)
+
+// document.body.appendChild(newElement)
+
+
+// let students = [
+//     {name: "student 1" , phone: "1234567890" , class:"9A"},    {name: "student 2" , phone: "2134567890" , class:"9B"},
+//     {name: "student 3" , phone: "3214567890" , class:"9C"},
+//     {name: "student 4" , phone: "4321567890" , class:"9D"}
+// ]
+
+// let listParent = document.querySelector("#studentList")
+
+// console.log(listParent)
+
+// for(let student of students){
+//     let newListItem = document.createElement("li")
+
+//     newListItem.innerText = student
+
+//     console.log(newListItem)
+
+//     listParent.appendChild(newListItem)
+// }
+
+let students = [
+    { name: "student 1", phone: "1234567890", class: "9A" }, { name: "student 2", phone: "2134567890", class: "9B", note: "work on grades" },
+    { name: "student 3", phone: "3214567890", class: "9C", note: "do more work" },
+    { name: "student 4", phone: "4321567890", class: "9D" }
+]
+
+let table = document.getElementById("studentTable")
+
+// for(let student of students){
+
+//     let newRow = document.createElement('tr')
+
+//     newRow.innerHTML = `<td>${student.name}</td> <td>${student.phone}</td> <td>${student.class}</td>`
+
+//     table.appendChild(newRow)
+
+// }
+
+// students.forEach((student) => {
+//     let newRow = document.createElement('tr')
+
+//     newRow.innerHTML = `<td>${student.name}</td> <td>${student.phone}</td> <td>${student.class}</td> <td>${student.note}</td>`
+
+//     table.appendChild(newRow)
+// })
+
+students.forEach((student) => {
+    let newRow = document.createElement('tr')
+
+    for(let key in student){
+        let newColumn = document.createElement("td")
+        newColumn.innerText = student[key]
+        newRow.appendChild(newColumn)
+    }
+
+    table.appendChild(newRow)
+})
