@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        .e1 {
+            width: 300px;
+            height: 300px;
+        }
+
+        .e2 {
+            width: 500px;
+            height: 300px;
+        }
+
+        .parent {
+            height: 400px;
+        }
+
+        .child {
+            width: 250px;
+            height: 250px;
+            background-color: var(--bs-warning);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- opacity-0,50,100 -->
+
+    <!-- <div class="e1 bg-dark opacity-100">
+
+    </div> -->
+
+    <!-- display | d-{none,inline,block,inline-block,flex} -->
+
+    <div class="e1 bg-danger d-inline-block text-light">element 1</div>
+    <div class="e2 bg-primary d-inline-block text-light">element 2</div>
+
+    <!-- flex layout -->
+
+    <!-- d-flex | display : flex; -->
+    <!-- gap-{1 0.25rem,2 0.5rem,30.75rem,4 1rem,5 1.25rem} -->
+    <!-- justify-content-(start,end,center,between,around,evenly) | align-items-(start,end,center)  -->
+    <!-- flex-(row,column,row-reverse,column-reverse) -->
+     <!--flex-(wrap,nowrap) -->
+    <div class="parent border border-5 border-dark p-3 d-flex flex-row gap-3 justify-content-center align-items-center flex-wrap">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+
+</body>
+
+</html>

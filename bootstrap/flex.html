@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding: 5%;
+        }
+
+        .parent {
+            width: 100%;
+            height: 700px;
+            border: 2px solid black;
+            display: flex;
+            /* if direction is row justify-content will do horizontall alignment and align-items do vertical */
+            flex-direction: row;
+            /* default value/preset */
+            justify-content:space-between;
+            align-items: center;
+
+            /* if direction is column justify-content will do vertical alignment and align-items do horizontal */
+            /* flex-direction: column; */
+            /* default value/preset */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+
+            /* flex-wrap: wrap; */
+
+            gap: 1rem;
+        }
+
+        /* flex child properties */
+        /* order,shrink,grow,basis */
+
+
+        .child {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            /* flex-grow: 0; */
+            /* default */
+            /* flex-grow: 1; */
+            /* order: 3; */
+            /* inital width / height aign to the child elements */
+            /* flex-basis: 300px; */
+        }
+
+        .child1{
+            /* flex-grow: 1; */
+            flex-shrink: 0;
+            /* order: 0; */
+        }
+
+        .child2{
+            /* order: 0; */
+            /* flex-grow: 1  */
+        }
+
+        .child4{
+            /* order: 1;
+            flex-basis: 500px; */
+        }
+
+        .child > span{
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        } 
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child child1"><span> 1 </span></div>
+        <div class="child child2"><span> 2 </span></div>
+        <div class="child child3"><span> 3 </span></div>
+        <div class="child child4"><span> 4 </span></div>
+        <div class="child child5"><span> 5 </span></div>
+        <div class="child child6"><span> 6 </span></div>
+    </div>
+</body>
+
+</html>
