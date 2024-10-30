@@ -29,6 +29,11 @@
             width: 250px;
             height: 250px;
             background-color: var(--bs-warning);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -54,11 +59,11 @@
     <!-- flex-(row,column,row-reverse,column-reverse) -->
      <!--flex-(wrap,nowrap) -->
     <div class="parent border border-5 border-dark p-3 d-flex flex-row gap-3 justify-content-center align-items-center flex-wrap">
-        <div class="child">1</div>
-        <div class="child">2</div>
+        <div class="child flex-grow-1 order-5">1</div>
+        <div class="child flex-grow-1 order-4">2</div>
+        <!-- <div class="child"></div>
         <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
+        <div class="child"></div> -->
     </div>
 
 

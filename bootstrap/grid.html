@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .row>div {
+            background-color: var(--bs-dark);
+            font-size: 1rem;
+            color: var(--bs-light);
+            font-weight: bold;
+            padding: 1rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- row is divided into 12fr | how to calculate the size of a col in the row by default : 12 / no. of col : col - 12fr -->
+
+    <!-- what if we want to define the a perticular size of a xyz col -->
+
+    <!-- col-(1 to 12) -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row bg-warning p-2 gap-2">
+                <div class="col">
+                    <span>this is col 1</span>
+                </div>
+                <div class="col">
+                    <span>this is col 2</span>
+                </div>
+                <div class="col">
+                    <span>this is col 3</span>
+                </div>
+                <div class="col">
+                    <span>this is col 4</span>
+                </div>
+                <!-- <div class="col"></div> -->
+            </div>
+
+
+            <div class="row bg-warning p-2 gap-2 mt-5">
+                <div class="col-12 col-md">
+                    <span>this is col 1</span>
+                </div>
+                <div class="col-12 col-md">
+                    <span>this is col 2</span>
+                </div>
+                <div class="col-12 col-md-12">
+                    <span>this is col 3</span>
+                </div>
+                <div class="col-12 col-md-2">
+                    <span>this is col 4</span>
+                </div>
+                <div class="col-12 col-md">
+                    <span>this is col 4</span>
+                </div>
+                <!-- <div class="col"></div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
